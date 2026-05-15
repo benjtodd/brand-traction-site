@@ -1,0 +1,261 @@
+/* =====================================================================
+   Brand Traction Marketing — Colors & Type
+   Deep & Trusted palette · Urbanist + Lato
+   "Marketing that Actually Works"
+   ===================================================================== */
+
+/* ---------- Webfonts (self-hosted) ---------- */
+@font-face {
+  font-family: "Urbanist";
+  src: url("./fonts/Urbanist-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("./fonts/Urbanist-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ============ BRAND COLORS ============ */
+  /* Anchor */
+  --bt-navy:           #0F1F3D;   /* Deep Navy — headings, dark surfaces, anchor */
+  --bt-logo-black:     #221F20;   /* Warmer near-black — logo on light bgs. NEVER use #000 */
+
+  /* Hero / Action */
+  --bt-blue:           #2563EB;   /* Electric Blue — primary CTA, links */
+  --bt-blue-wash:      #EFF6FF;   /* Blue-tinted bg, callouts */
+
+  /* Accent */
+  --bt-amber:          #F59E0B;   /* Warm Amber — accent CTA, ROI highlights, pricing */
+  --bt-amber-wash:     #FEF3C7;   /* Amber-tinted bg, callouts */
+
+  /* Neutrals */
+  --bt-cream:          #F8FAFF;   /* Cool Cream — page background */
+  --bt-offwhite:       #F2F4F8;   /* Off White — cards, input surfaces */
+  --bt-slate:          #64748B;   /* Slate Mid — captions, muted labels */
+  --bt-light-grey:     #E2E6EE;   /* Borders, dividers */
+  --bt-white:          #FFFFFF;   /* Reversed text on dark */
+
+  /* ============ SEMANTIC SURFACES ============ */
+  --surface-page:      var(--bt-cream);
+  --surface-card:      var(--bt-white);
+  --surface-sunken:    var(--bt-offwhite);
+  --surface-inverse:   var(--bt-navy);
+  --surface-callout-blue:  var(--bt-blue-wash);
+  --surface-callout-amber: var(--bt-amber-wash);
+
+  /* ============ SEMANTIC TEXT ============ */
+  --fg-1:              var(--bt-navy);        /* primary text, headings */
+  --fg-2:              #1F2A44;               /* slightly softer body navy */
+  --fg-muted:          var(--bt-slate);       /* captions */
+  --fg-on-dark:        var(--bt-white);
+  --fg-on-amber:       var(--bt-logo-black);  /* button text on amber */
+  --fg-link:           var(--bt-blue);
+
+  /* ============ BORDERS ============ */
+  --border-1:          var(--bt-light-grey);
+  --border-strong:     #C9D1DE;
+  --border-focus:      var(--bt-blue);
+
+  /* ============ ELEVATION ============ */
+  --shadow-xs:  0 1px 2px rgba(15, 31, 61, 0.06);
+  --shadow-sm:  0 2px 6px rgba(15, 31, 61, 0.08);
+  --shadow-md:  0 8px 24px rgba(15, 31, 61, 0.10);
+  --shadow-lg:  0 20px 48px rgba(15, 31, 61, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.30);
+
+  /* ============ RADII ============ */
+  --radius-button:   6px;
+  --radius-input:    6px;
+  --radius-card:    12px;
+  --radius-modal:   16px;
+  --radius-pill:  9999px;
+
+  /* ============ SPACING (8pt with 4px half-step) ============ */
+  --space-xs:    4px;
+  --space-sm:    8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   40px;
+  --space-2xl:  64px;
+  --space-3xl:  96px;
+
+  /* ============ TYPOGRAPHY — STACKS ============ */
+  --font-display: "Urbanist", "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-body:    "Lato", system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+
+  /* ============ TYPOGRAPHY — SIZES (desktop) ============ */
+  --fs-h1:        60px;
+  --fs-h2:        44px;
+  --fs-h3:        30px;
+  --fs-h4:        22px;
+  --fs-body-lg:   18px;
+  --fs-body:      16px;
+  --fs-small:     14px;
+  --fs-caption:   12px;
+  --fs-label:     11px;
+
+  --lh-h1: 1.05;
+  --lh-h2: 1.10;
+  --lh-h3: 1.15;
+  --lh-h4: 1.25;
+  --lh-body-lg: 1.65;
+  --lh-body:    1.60;
+  --lh-small:   1.50;
+  --lh-caption: 1.40;
+  --lh-label:   1.20;
+
+  --tracking-display: -0.02em;
+  --tracking-label:    0.08em;
+
+  /* ============ MOTION ============ */
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-emphatic: cubic-bezier(0.16, 0.84, 0.32, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   360ms;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --fs-h1: 38px;
+    --fs-h2: 32px;
+    --fs-h3: 24px;
+    --fs-h4: 18px;
+  }
+}
+
+/* ============ BASE ELEMENT RESETS ============ */
+html { color-scheme: light; }
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============ TYPE STYLES — SEMANTIC ============ */
+h1, .bt-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--tracking-display);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-md);
+  text-wrap: balance;
+}
+h2, .bt-h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tracking-display);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-md);
+  text-wrap: balance;
+}
+h3, .bt-h3 {
+  font-family: var(--font-display);
+  font-weight: 400;          /* H3 is Urbanist Regular per guide */
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: -0.01em;
+  color: var(--fg-1);
+  margin: 0 0 var(--space-sm);
+}
+h4, .bt-h4 {
+  font-family: var(--font-body); /* Lato 700 */
+  font-weight: 700;
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h4);
+  color: var(--fg-1);
+  margin: 0 0 var(--space-sm);
+}
+p, .bt-body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-2);
+  margin: 0 0 var(--space-md);
+  text-wrap: pretty;
+}
+.bt-body-lg {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--fg-2);
+}
+small, .bt-small {
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  color: var(--fg-muted);
+}
+.bt-caption {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  font-weight: 700;
+  color: var(--fg-muted);
+}
+.bt-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  line-height: var(--lh-label);
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+/* Italic testimonial — pair with amber left border */
+.bt-quote {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--fg-2);
+  border-left: 3px solid var(--bt-amber);
+  padding: 4px 0 4px var(--space-md);
+  margin: 0;
+}
+
+a {
+  color: var(--fg-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-base) var(--ease-standard);
+}
+a:hover { border-bottom-color: currentColor; }
+
+strong, b { font-weight: 700; color: var(--fg-1); }
+em { font-style: italic; }
+
+::selection { background: var(--bt-amber-wash); color: var(--bt-navy); }
