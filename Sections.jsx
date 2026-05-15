@@ -224,7 +224,7 @@ function Footer({ onGuide }) {
           <div className="bt-footer__social">
             <a href="https://www.facebook.com/benjtodd" aria-label="Facebook"><Icon name="facebook" size={18} /></a>
             <a href="https://www.instagram.com/benjtodd" aria-label="Instagram"><Icon name="instagram" size={18} /></a>
-            <a href="#" aria-label="LinkedIn"><Icon name="linkedin" size={18} /></a>
+            <a href="https://www.linkedin.com/in/ben-todd-0726b7141/" aria-label="LinkedIn"><Icon name="linkedin" size={18} /></a>
           </div>
         </div>
         <div>
