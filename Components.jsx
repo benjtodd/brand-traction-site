@@ -53,8 +53,10 @@ function NavBar({ onBook }) {
   return (
     <nav className={"bt-nav" + (scrolled ? " is-scrolled" : "")}>
       <div className="bt-nav__inner">
-        <LogoMark size={36} />
-        <span className="bt-nav__brand">Brand Traction</span>
+        <a href="#" style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none" }}>
+          <LogoMark size={36} />
+          <span className="bt-nav__brand">Brand Traction</span>
+        </a>
         <div className="bt-nav__links">
           <a href="#problem">The Problem</a>
           <a href="#plan">The Plan</a>
