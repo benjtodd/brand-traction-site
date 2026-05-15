@@ -1,8 +1,9 @@
-/* global React, ReactDOM, NavBar, Hero, Pain, Plan, Why, BigCTA, NotReady, Footer, BookingModal */
+/* global React, ReactDOM, NavBar, Hero, Pain, Plan, Why, BigCTA, NotReady, Footer, BookingModal, GuideModal */
 const { useState, useEffect } = React;
 
 function App() {
   const [booking, setBooking] = useState(false);
+  const [guide, setGuide] = useState(false);
   useEffect(() => {
     if (window.lucide) window.lucide.createIcons();
   });
@@ -15,9 +16,10 @@ function App() {
       <Plan />
       <Why />
       <BigCTA onBook={open} />
-      <NotReady />
+      <NotReady onGuide={() => setGuide(true)} />
       <Footer />
       <BookingModal open={booking} onClose={() => setBooking(false)} />
+      <GuideModal open={guide} onClose={() => setGuide(false)} />
     </div>
   );
 }

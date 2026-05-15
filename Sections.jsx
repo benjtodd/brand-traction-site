@@ -172,7 +172,7 @@ function BigCTA({ onBook }) {
   );
 }
 
-function NotReady() {
+function NotReady({ onGuide }) {
   return (
     <section className="bt-section bt-section--white" id="guide" data-screen-label="06 Guide">
       <div className="bt-section__inner">
@@ -184,7 +184,7 @@ function NotReady() {
               Download our free guide, <strong>5 Steps to Better Marketing</strong>, and take the first
               step toward marketing that works, on your own schedule.
             </p>
-            <Button variant="dark" size="lg" iconRight="download">
+            <Button variant="dark" size="lg" iconRight="download" onClick={onGuide}>
               Download the free guide
             </Button>
           </div>
