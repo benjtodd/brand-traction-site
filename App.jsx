@@ -17,7 +17,7 @@ function App() {
       <Why />
       <BigCTA onBook={open} />
       <NotReady onGuide={() => setGuide(true)} />
-      <Footer />
+      <Footer onGuide={() => setGuide(true)} />
       <BookingModal open={booking} onClose={() => setBooking(false)} />
       <GuideModal open={guide} onClose={() => setGuide(false)} />
     </div>

@@ -211,7 +211,7 @@ function NotReady({ onGuide }) {
   );
 }
 
-function Footer() {
+function Footer({ onGuide }) {
   return (
     <footer className="bt-footer" data-screen-label="07 Footer">
       <div className="bt-footer__inner">
@@ -233,7 +233,7 @@ function Footer() {
             <li><a href="#plan">The plan</a></li>
             <li><a href="#why">Why Brand Traction</a></li>
             <li><a href="https://zcal.co/benjtodd/discovery">Strategy session</a></li>
-            <li><a href="https://email.brandtraction.marketing">Free guide</a></li>
+            <li><a href="#" onClick={(e) => { e.preventDefault(); onGuide(); }}>Free guide</a></li>
           </ul>
         </div>
         <div>
