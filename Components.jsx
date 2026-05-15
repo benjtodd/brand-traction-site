@@ -57,9 +57,9 @@ function NavBar({ onBook }) {
         <span className="bt-nav__brand">Brand Traction</span>
         <div className="bt-nav__links">
           <a href="#problem">The Problem</a>
-          <a href="#plan">The plan</a>
-          <a href="#why">Why us</a>
-          <a href="#guide">Free guide</a>
+          <a href="#plan">The Plan</a>
+          <a href="#why">Why Us</a>
+          <a href="#guide">Free Guide</a>
         </div>
         <div className="bt-nav__cta">
           <Button variant="primary" onClick={onBook}>Schedule a session</Button>
