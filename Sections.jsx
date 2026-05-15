@@ -164,7 +164,9 @@ function BigCTA({ onBook }) {
         <Button variant="accent" size="lg" onClick={onBook} iconRight="arrow-right">
           Schedule a strategy session
         </Button>
-        <Button variant="outlined" size="lg">Email Ben directly</Button>
+        <a href="mailto:ben@brandtraction.marketing" style={{ textDecoration: "none" }}>
+          <Button variant="outlined" size="lg">Email Ben Directly</Button>
+        </a>
       </div>
     </section>
   );
