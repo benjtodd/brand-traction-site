@@ -242,7 +242,6 @@ function Footer({ onGuide }) {
             <li><a href="#">5 Steps to Better Marketing</a></li>
             <li><a href="#">ROI worksheet</a></li>
             <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Blog</a></li>
           </ul>
         </div>
         <div>
