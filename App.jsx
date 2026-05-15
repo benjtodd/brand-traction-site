@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     if (window.lucide) window.lucide.createIcons();
   });
-  const open = () => setBooking(true);
+  const open = () => window.open("https://zcal.co/benjtodd/discovery", "_blank");
   return (
     <div className="bt-site">
       <NavBar onBook={open} />
