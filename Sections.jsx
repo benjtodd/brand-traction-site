@@ -153,7 +153,7 @@ function Why() {
 
 function BigCTA({ onBook }) {
   return (
-    <section className="bt-bigcta" data-screen-label="05 Big CTA">
+    <section className="bt-bigcta" id="contact" data-screen-label="05 Big CTA">
       <SectionEyebrow>Ready when you are</SectionEyebrow>
       <h2>Ready to transform your marketing?</h2>
       <p>
@@ -248,7 +248,7 @@ function Footer({ onGuide }) {
           <h5>Company</h5>
           <ul>
             <li><a href="#">About Ben</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Terms</a></li>
           </ul>
