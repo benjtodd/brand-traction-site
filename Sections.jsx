@@ -249,8 +249,6 @@ function Footer({ onGuide }) {
           <ul>
             <li><a href="#">About Ben</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
           </ul>
         </div>
       </div>
