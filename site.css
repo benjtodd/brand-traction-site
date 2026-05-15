@@ -1,5 +1,9 @@
 /* Marketing site — kit-local styles (only things not in colors_and_type.css) */
 
+html {
+  scroll-padding-top: 72px; /* offset for fixed navbar */
+}
+
 .bt-site {
   background: var(--bt-cream);
   color: var(--fg-1);

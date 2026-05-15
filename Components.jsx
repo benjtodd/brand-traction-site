@@ -56,13 +56,12 @@ function NavBar({ onBook }) {
         <LogoMark size={36} />
         <span className="bt-nav__brand">Brand Traction</span>
         <div className="bt-nav__links">
-          <a href="#problem">The problem</a>
+          <a href="#problem">The Problem</a>
           <a href="#plan">The plan</a>
           <a href="#why">Why us</a>
           <a href="#guide">Free guide</a>
         </div>
         <div className="bt-nav__cta">
-          <button className="bt-nav__signin">Client log-in</button>
           <Button variant="primary" onClick={onBook}>Schedule a session</Button>
         </div>
       </div>
